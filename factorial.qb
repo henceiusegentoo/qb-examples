@@ -1,0 +1,6 @@
+# An example of recursively calculating the factorial of a number in qb
+
+fac n =
+    match n:
+        case 0: return 1
+        case n: return n * n-1 |> fac

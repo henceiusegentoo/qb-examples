@@ -1,0 +1,17 @@
+# A simple example of structs in qb
+
+struct! Human:
+    name: str
+    age: int
+    height: float
+    weight: float
+
+    speak sentence =
+        sentence |> cout!
+
+human1 = Human('John',
+                25,
+                1.75,
+                75.0)
+
+'Hello World!' |> human1.speak

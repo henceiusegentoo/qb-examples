@@ -1,0 +1,14 @@
+# A simple example of fizzbuzz in qb
+
+for i in 1..101:
+    if i % 15 == 0:
+        'FizzBuzz' |> cout!
+
+    elif i % 3 == 0:
+        'Fizz' |> cout!
+
+    elif i % 5 == 0:
+        'Buzz' |> cout!
+
+    else:
+        i |> cout!

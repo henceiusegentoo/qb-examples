@@ -1,0 +1,16 @@
+# An example for caesar encryption in qb
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+caesar string, shift_factor =
+    encrypted = ""
+
+    for char in string:
+        if char in alphabet:
+            index = char |> alphabet.index
+            new_index = (index + shift_factor) % 26
+            encrypted += alphabet[new_index]
+        else:
+            encrypted += char
+
+    return encrypted
